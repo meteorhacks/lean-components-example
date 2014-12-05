@@ -1,0 +1,3 @@
+LeanComponents.define('input', {
+  
+});

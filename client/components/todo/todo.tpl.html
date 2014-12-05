@@ -1,3 +1,8 @@
 <template name="todo">
   <h4>This is todo area</h4>
+  <br><br>
+  {{#with params}}
+    {{> render component="input" text="cooio" ref="message"}}
+  {{/with}}
+  <button>Send</button>
 </template>

@@ -9,5 +9,5 @@ LeanComponents.define('todo', {
 
   destroyed: function() {
     console.log("Todo Destroyed!")
-  }
+  },
 });
