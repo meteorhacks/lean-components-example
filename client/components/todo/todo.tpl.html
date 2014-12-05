@@ -1,3 +1,14 @@
 <template name="todo">
   <h4>This is todo area</h4>
+  <input type="text" id="input-todo" placeholder="What needs to be done?…">
+  <input type="button" value="Add" class="btn btn-primary" id="add-todo" />
+  <ul>
+    {{#each state.todos}}
+      <li class="todo">
+        <input type="checkbox" class="todo-done" checked={{isDone}}/>  
+        {{title}} 
+        <input type="button" value="Delete" class="btn btn-mini delete-todo" />
+      </li>
+    {{/each}}
+  </ul>
 </template>
