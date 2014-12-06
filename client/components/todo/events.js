@@ -4,6 +4,10 @@ Template.todo.events({
   }
 });
 
-Template.todo.rendered = function() {
-  this.data.component('message').onChange = console.log.bind(console);
-};
+Template.todo.helpers({
+  print: function() {
+    return function(val, params) {
+      console.log("value: " + val + " of " + params.ref)
+    };
+  }
+});

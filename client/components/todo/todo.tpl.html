@@ -2,7 +2,7 @@
   <h4>This is todo area</h4>
   <br><br>
   {{#with params}}
-    {{> render component="input" text="cooio" ref="message"}}
+    {{> render component="input" text="cooio" ref="message" onChange=print}}
   {{/with}}
   <button>Send</button>
 </template>
